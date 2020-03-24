@@ -1,0 +1,102 @@
+
+<!--Sample Form
+Author: Ronald Milligan
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+ 
+  <head>
+   
+    <link rel="stylesheet" href="form1_style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Registration Form</title>
+    
+  </head>
+  
+  <body>
+   
+    <h1><u> Fill the Form to Register in the Course(s) </u></h1>
+    <br />
+    
+    <div class= "container"; > <!-- Beginning of Container -->
+    
+    <form class= "my-form";><!-- Beginning of Form -->
+     
+      <label class="form-group" for="firstname">First Name: *</label>
+      <input
+        type="text"
+        id="firstname"
+        name="firstname"
+        placeholder="Enter First Name"
+        required
+      />
+      <br /><br />
+      <label class="form-group" for="lastname">Last Name: *</label>
+      <input
+        type="text"
+        id="lastname"
+        name="lastname"
+        placeholder="Enter Last Name"
+        required
+      />
+      <br /><br />
+      <label class="form-group" for="email">Email: *</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="e.g. unknown@unknown.com"
+        title="Enter a valid Email"
+        required
+      />
+      <br /><br />
+      <label class="form-group" for="passowrd">Password *</label>
+      <input
+        type="password"
+        title="Minimum 8 characters, one number, one uppercase and one lowercase letter"
+        pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*"
+        id="password"
+        name="password"
+        required
+      />
+      <br /><br />
+      <div id="box-1"> <!-- Gender and Course Box -->
+      <label class="form-group" for="gender">Gender: *</label>
+      <input id="radio" type="radio" name="radio" required />
+      Male
+      <input id="radio" type="radio" name="radio" required />
+      Female
+      </div> <!-- End of Gender box -->
+      <div id="box-1"> <!--Beginning of Course Box -->
+      Select Course(s) to Register:<br /><br />
+      <input type="checkbox" name="Language" value="HTML" />
+      HTML <br/ >
+      <input type="checkbox" name="Language" value="HTML" />
+      PHP
+      <br />
+      <input type="checkbox" name="Language" value="HTML" />
+      C
+      <br />
+      <input type="checkbox" name="Language" value="HTML" />
+      JAVA
+      </div><!-- End of Course Box-->
+      <input class="button" type="submit" value="Submit" /><br />
+      
+    </form> <!-- End of Form -->
+    
+    </div>  <!-- End of Containiner -->
+    
+    <!--Beginning of Footer -->
+    
+    <br /><br /><br />
+    <footer class="footer" ><a href="html1.html">Click here to go to Home Page</a></footer>
+    
+    <!--End of Footer -->
+    
+  </body>
+</html>

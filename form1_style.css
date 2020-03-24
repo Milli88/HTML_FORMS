@@ -1,0 +1,58 @@
+body{
+    margin:100px;
+    padding: 100px;
+    border:gray;
+}
+
+
+.my-form{
+    padding: 20px;
+}
+
+.form-group{
+    padding-bottom: 15px;
+    display: block;
+}
+
+.my-form input[type="text"]{
+    
+    padding:8px;
+    width:100%;
+}
+
+
+.my-form input[type="email"]{
+    
+    padding:8px;
+    width:100%;
+}
+
+
+.my-form input[type="password"]{
+    
+    padding:8px;
+    width:100%;
+}
+
+#box-1{
+    
+    padding:10px 10px;
+    margin:10px;
+    
+}
+
+.button{
+    background-color: azure;
+    color:black;
+    padding: 1px 50px;
+    border: soft black;
+    margin: 40px;
+    float: center;
+
+    
+}
+
+.button:hover{
+    background: red;
+    color:white;
+}
